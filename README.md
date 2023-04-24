@@ -1,1 +1,2 @@
 # SolarEnergyPrediction
+AWS deplyment
