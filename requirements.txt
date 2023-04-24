@@ -1,8 +1,6 @@
 Flask
-scikit-learn
-seaborn
+sklearn
 pandas
 numpy
 matplotlib
 gunicorn
--e .
