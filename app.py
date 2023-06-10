@@ -46,10 +46,10 @@ def predictdf():
     df=model.predict(final_input1)[0]
     return render_template("dtresults.html",prediction_text1="The AC power prediction using Decision Tree is {} kW".format(df))
 
+#for local host
+#if __name__=="__main__":
+    #app.run(debug=True,host='0.0.0.0',port=8080)
 
-if __name__=="__main__":
-    app.run(debug=True,host='0.0.0.0',port=8080)
-
-#if __name__ =='__main__':
- #  app.run(host='0.0.0.0',port=8080) 
+if __name__ =='__main__':
+   app.run(host='0.0.0.0',port=8080) 
      
