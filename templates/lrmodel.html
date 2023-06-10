@@ -42,20 +42,20 @@
                         <div id="success"></div>
                         <div class="centerform">
                         <form action="{{ url_for('predict')}}"method="post" >
-                           
-                            <input class="form-control bg-secondary border-0 py-4 px-3 width-10px" type="text" name="DAY" placeholder="DAY" required="required" /><br>
-                            
-                            <input class="form-control bg-secondary border-0 py-4 px-3" type="text" name="MONTH" placeholder="MONTH" required="required" /><br>
-                            
-                            <input class="form-control bg-secondary border-0 py-4 px-3" type="text" name="WEEK" placeholder="WEEK" required="required" /><br>
-                            
-                            <input class="form-control bg-secondary border-0 py-4 px-3"type="text" name="MINUTES" placeholder="MINUTES" required="required" /><br> 
-                            
-                            <input class="form-control bg-secondary border-0 py-4 px-3"type="text" name="AMBIENT_TEMPERATURE" placeholder="AMBIENT_TEMPERATURE" required="required" /><br>
-                            
-                            <input class="form-control bg-secondary border-0 py-4 px-3"type="text" name="MODULE_TEMPERATURE" placeholder="MODULE_TEMPERATURE" required="required" /><br>
-                            
-                            <input class="form-control bg-secondary border-0 py-4 px-3"type="text" name="IRRADIATION" placeholder="IRRADIATION" required="required" /><br>
+                            <label type="text">DATE:</label>
+                            <input class="form-control bg-secondary border-0 py-4 px-3 width-10px" type="text" name="DAY" placeholder="Enter in DD format" required="required" /><br>
+                            <label type="text">MONTH:</label>
+                            <input class="form-control bg-secondary border-0 py-4 px-3" type="text" name="MONTH" placeholder="Enter in MM format" required="required" /><br>
+                            <label type="text">WEEK:</label>
+                            <input class="form-control bg-secondary border-0 py-4 px-3" type="text" name="WEEK" placeholder="Ex. FEB 2nd week will be 6" required="required" /><br>
+                            <label type="text">MINUTES:</label>
+                            <input class="form-control bg-secondary border-0 py-4 px-3"type="text" name="MINUTES" placeholder="1:30pm =(13*60min)+30min = 810   " required="required" /><br> 
+                            <label type="text">AMBIENT TEMPERATURE:</label>
+                            <input class="form-control bg-secondary border-0 py-4 px-3"type="text" name="AMBIENT_TEMPERATURE" placeholder="Enter in °C" required="required" /><br>
+                            <label type="text">MODULE TEMPERATURE:</label>
+                            <input class="form-control bg-secondary border-0 py-4 px-3"type="text" name="MODULE_TEMPERATURE" placeholder="Enter in °C" required="required" /><br>
+                            <label type="text">IRRADIATION:</label>
+                            <input class="form-control bg-secondary border-0 py-4 px-3"type="text" name="IRRADIATION" placeholder="Enter in W/m2" required="required" /><br>
                             </div>
                               <button href="#contact" type="submit" class="btn btn-primary btn-block btn-large one" style="width:50% ;">Predict</button>
                           </form>
